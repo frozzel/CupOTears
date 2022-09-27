@@ -29,7 +29,7 @@ function getSearch(coffeeDrink){
 
     })
 }
-////////////// ^^^^^^^^^ Need to adjust Dom based on search///////////////
+////////////// ^^^^^^^^^ Need to adjust Dom based on search////////
 
 
 
