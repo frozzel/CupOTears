@@ -45,20 +45,25 @@
   <div class="container-fluid p-0">
     <img src="./assets/images/coffee-banner.jpg" class="w-100" alt="coffee beans gathered on a light wooden table">
   </div>
+
   <br>
 
-  <div class="row">
-  <!-- search bar & button -->
-    <div class="col-4">
-      <div class="input-group mb-3">  
-        <input type="text" class="form-control" placeholder="Search a Coffee!">
-        <button class="btn" type="button" id="search-button">Get Coffee</button>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- search bar & button -->
+      <div class="col-md-4">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search a Coffee!">
+          <button class="btn" type="button" id="search-button">Get Coffee</button>
+        </div>
+        <!-- search history container -->
+        <div class="container-fluid">
+          <p>this is where the search history will go.  it should fit inside the alotted space. </p>
+        </div>
       </div>
-    </div>
 
-    <div class="card mb-3" style="max-width: 60%;">
-      <div class="row g-0">
-        <div class="col-md-4">
+      <div class="card mb-3" style="max-width: 60%;">
+        <div class="col-md-8">
           <!-- <p id="image"> -->
           <div id="image">
             <img id="image" src="" class="img-fluid rounded-start" alt="">
@@ -68,29 +73,17 @@
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title " id="title">Card title</h5>
-            <p class="card-text" id="description">This is a wider card with supporting text below as a natural lead-in
-              to additional content. This content is a little bit longer.</p>
+            <p class="card-text" id="description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             <p class="card-text" id="ingredients"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
+
     </div>
 
-  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="./assets/JS/script.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./assets/JS/script.js"></script>
 </body>
 
 </html>
