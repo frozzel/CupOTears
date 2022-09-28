@@ -6,3 +6,8 @@ img {
 .navbar {
     background-color: bisque ;
 }
+
+.search {
+    position: absolute; 
+    padding: 20px;;
+}
