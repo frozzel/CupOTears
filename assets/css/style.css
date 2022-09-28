@@ -1,8 +1,19 @@
 img {
     /* height: 300px; */
     width: 300px;
+    border-radius: 3%;
 }
 
 .navbar {
     background-color: bisque ;
 }
+
+#search-button {
+    background-color: bisque;
+    border: 1px solid gray;
+}
+
+#image {
+    width: 50%;
+}
+
