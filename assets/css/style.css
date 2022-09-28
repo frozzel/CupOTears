@@ -1,6 +1,8 @@
 img {
     /* height: 300px; */
+    padding-top: 1%;
     width: 300px;
+    border-radius: 3%;
 }
 
 .navbar {
@@ -11,3 +13,8 @@ img {
     background-color: bisque;
     border: 1px solid gray;
 }
+
+#image {
+    width: 50%;
+}
+
