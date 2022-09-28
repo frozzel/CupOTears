@@ -1,8 +1,18 @@
-img {
-    /* height: 300px; */
+/* img {
+    height: 300px;
     width: 300px;
-}
+} */
 
 .navbar {
     background-color: bisque ;
+}
+.fixedtop {
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    width: 40%;
+}
+.image {
+    width: 300px;
+    /* height: 300px; */
 }
