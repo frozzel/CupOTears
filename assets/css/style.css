@@ -1,12 +1,28 @@
-img {
-    /* height: 300px; */
+/* img {
+    height: 300px;
     width: 300px;
+/* <<<<<<< makesearchableJS */
+} */
+/* ======= */
     border-radius: 3%;
 }
+/* >>>>>>> main */
 
 .navbar {
     background-color: bisque ;
 }
+/* <<<<<<< makesearchableJS */
+.fixedtop {
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    width: 40%;
+}
+.image {
+    width: 300px;
+    /* height: 300px; */
+}
+/* ======= */
 
 #search-button {
     background-color: bisque;
@@ -17,3 +33,4 @@ img {
     width: 50%;
 }
 
+/* >>>>>>> main */
