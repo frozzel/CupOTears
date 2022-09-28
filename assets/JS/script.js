@@ -29,19 +29,21 @@ function getSearch(coffeeDrink){
 
 //Second API for Nutritional Facts//
 
-
-async function sendApiRequest(){
-    let APP_ID  = "02c0a468"
-    let APP_KEY = "6f7f5bcc04cea5899844a678b604fc04"
-    let response = await fetch("https://api.edamam.com/api/nutrition-details");
-    console.log(response)
-}
-
-function useApiData(data){
-    
-}
 ////////////// ^^^^^^^^^ Need to adjust Dom based on search////////
+////////// Test new Api NutritionIX /////////////
+const options = {
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': 'c978dd31b1msh40737d18773c28ap1b2ec9jsn3a7dc7a1361d',
+        'X-RapidAPI-Host': 'nutritionix-api.p.rapidapi.com'
+    }
+};
 
+fetch('https://nutritionix-api.p.rapidapi.com/v1_1/search/coffee?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat', options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
+////// ^^^^^ check readme links ///////// example search "item_name,item_id,brand_name,nf_calories,nf_total_fat" //// 
 
 
 
