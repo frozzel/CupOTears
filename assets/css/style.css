@@ -1,13 +1,39 @@
-img {
-    /* height: 300px; */
-    width: 300px;
-}
+main {
+    border-radius: 3%;
+} 
+
+
 
 .navbar {
     background-color: bisque ;
 }
 
+<<<<<<< HEAD
 .search {
     position: absolute; 
     padding: 20px;;
 }
+=======
+.fixedtop {
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    width: 40%;
+}
+.image {
+    width: 300px;
+    /* height: 300px; */
+}
+
+
+#search-button {
+    background-color: bisque;
+    border: 1px solid gray;
+}
+
+#image {
+    width: 50%;
+}
+
+/* >>>>>>> main */
+>>>>>>> 77a88be8ae970b782cedd11070bbbc428d8645b5
