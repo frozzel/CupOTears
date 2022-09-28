@@ -22,16 +22,20 @@
     <div class="container">
       <span class="navbar-brand mb-0 h1 ">Cup O' Tears</span>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
-      </button>  <!-- hamburger button if we come up w/ enough navbar items to need it (for collapse)-->
+      </button> <!-- hamburger button if we come up w/ enough navbar items to need it (for collapse)-->
 
-      <div class="collapse navbar-collapse" id="navmenu"> <!-- added collapse-->
+      <div class="collapse navbar-collapse" id="navmenu">
+        <!-- added collapse-->
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="https://www.ncausa.org/About-Coffee" class="nav-link">Coffee Guide!</a> 
+            <a href="https://www.ncausa.org/About-Coffee" class="nav-link">Coffee Guide!</a>
           </li>
-          <!-- can add more top links here if we think of some, just filler -->
+          <li class="nav-item">
+            <a href="" class="nav-link">Any Other Great Ideas!!</a>
+          </li>
+          <!-- can add more navbar links here if we think of some, just filler -->
         </ul>
       </div>
     </div>
@@ -39,12 +43,19 @@
 
   <!-- banner above main section-->
   <div class="container-fluid p-0">
-    <img src="./assets/images/coffee-banner.jpg" class="w-100" alt="">
+    <img src="./assets/images/coffee-banner.jpg" class="w-100" alt="coffee beans gathered on a light wooden table">
   </div>
+  <br>
 
   <div class="row">
+  <!-- search bar & button -->
+    <div class="col-4">
+      <div class="input-group mb-3">  
+        <input type="text" class="form-control" placeholder="Search a Coffee!">
+        <button class="btn" type="button" id="search-button">Get Coffee</button>
+      </div>
+    </div>
 
-    <div class="col-4">Side Bar</div>
     <div class="card mb-3" style="max-width: 60%;">
       <div class="row g-0">
         <div class="col-md-4">

@@ -6,3 +6,8 @@ img {
 .navbar {
     background-color: bisque ;
 }
+
+#search-button {
+    background-color: bisque;
+    border: 1px solid gray;
+}
