@@ -4,17 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">  
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="coffeeCard">
-        <h2 id="title"></h2>
-        <p id="description"></p>
-        <p id="ingredients"></p>
-        <p id="image"></p>
-        
-    </div>
+    <header class="">
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1 ">CupOTears</span>
+            </div>
+          </nav>
+
+    </header>
     
+    <div class="row">
+
+    <div class="col-4">Side Bar</div>
+    <div class="card mb-3" style="max-width: 60%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <!-- <p id="image"> -->
+                <div id="image">
+            <img  id="image" src="" class="img-fluid rounded-start" alt="">
+             
+        </div><!-- </p> -->
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title " id="title">Card title</h5>
+              <p class="card-text" id="description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text" id="ingredients"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    </div>
     
 
 
