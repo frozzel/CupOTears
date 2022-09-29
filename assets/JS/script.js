@@ -6,7 +6,8 @@ var coffeeImg = $("#coffee-pic")
 var coffeeInfo = $("#description")
 var ingredients = $("#ingredients")
 var SearchInp;
-// autocomplete section 
+
+// begin autocomplete section 
 var availableDrinks = ['Black', 'Latte', 'Cappuccino', 'Americano', 'Espresso', 'Doppio', 'Cortado', 'Red Eye', 'Galao', 'Lungo', 'Macchiato', 'Mocha', 'Ristretto', 'Flat White', 'Affogato', 'Cafe au Lait', 'Irish', 'Guayoyo', 'Cortadito', 'Aguapanela Coffee'];
 
 function autocompleteMatch(input) {
@@ -37,9 +38,14 @@ function showResults(value) {
     } else {
         result.innerHTML = notFound;
     }
-   
 }
-// end of autocomplete
+// end autocomplete section
+
+// begin coffee notes section
+
+// (nothing in here yet)
+
+// end coffee notes section
 
 ////////// Api Call ///////////////////
 

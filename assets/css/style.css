@@ -29,7 +29,9 @@ main {
     width: 50%;
 }
 
-/* #result {
+/* begin auto-complete section
+
+/* #result {      a thin border for the dropdown if we want it
     border: 1px dotted #ccc;
     padding: 3px;
 } */
@@ -47,6 +49,17 @@ main {
 #result ul li:hover {
     background: #eee;
 }
+/* end auto-complete section */
+
+/* begin coffee notes section */
+#wrapper {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#coffee-notes {
+    font-weight: bold;
+}
+/* end coffee notes section */
 
 #container {
     border: 5px solid black;
