@@ -49,16 +49,17 @@ const options = {
 	}
 };
 
-fetch('https://nutritionix-api.p.rapidapi.com/v1_1/search/cappuccino?fields=item_name%2Cnf_calories%2Cnf_total_fat%2Citem_description', options)
+fetch("https://nutritionix-api.p.rapidapi.com/v1_1/search/" + searchBar + "?fields=item_name%2Cnf_calories%2Cnf_total_fat%2Citem_description", options)
 	.then(response => response.json())
 	.then(response => {
+        console.log(response)
          //display facts on page//
-        for(let description of Object.values(response)){
-        let coffedesc = document.getElementById(".info");
-        coffedesc.innerText = description;
-        coffeeInfo.append(coffedesc);
-        console.log(description);
-        }
+        // for(let description of Object.values(response)){
+        // let coffedesc = document.getElementById(".info");
+        // coffedesc.innerText = description;
+        // coffeeInfo.append(coffedesc);
+        // console.log(description);
+        // }
     })
        
     
