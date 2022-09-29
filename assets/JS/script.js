@@ -14,7 +14,7 @@ function autocompleteMatch(input) {
       return [];
     }
 
-    var reg = new RegExp(input)
+    var reg = new RegExp(input, "i")
     return availableDrinks.filter(function(term) {
         if (term.match(reg)) {
           return term;
