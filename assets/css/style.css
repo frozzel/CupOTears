@@ -1,9 +1,9 @@
 main {
     border-radius: 3%;
-} 
+}
 
 .navbar {
-    background-color: bisque ;
+    background-color: bisque;
 }
 
 /* logo on banner */
@@ -16,8 +16,8 @@ main {
 }
 
 /* .image { */
-    /* width: 300px; */
-    /* height: 300px; */
+/* width: 300px; */
+/* height: 300px; */
 /* } */
 
 #search-button {
@@ -27,4 +27,23 @@ main {
 
 #image {
     width: 50%;
+}
+
+/* #result {
+    border: 1px dotted #ccc;
+    padding: 3px;
+} */
+
+#result ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#result ul li {
+    padding: 5px 0;
+}
+
+#result ul li:hover {
+    background: #eee;
 }
