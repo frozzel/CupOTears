@@ -58,34 +58,38 @@
         </div>
         <div id="result" class="mb-3"></div> <!-- where autocomplete displays -->
 
-        <!-- search history container -->
-        <div class="container-fluid">
-          <p>this is where the search history will go. it should fit inside the alotted space. </p>
-        </div>
-        <div class ="info">Coffee Info</div>
-      </div>
+        <!-- coffee notes notepad -->
+        <div id="wrapper">
 
-      <div id="container" class=>
-        <!-- need to fix right side card spacing -->
+          <form id="paper" method="get" action="">
+          
+          <h5 id="coffee-notes">Coffee Notes:</h5>
+          
+          <textarea placeholder="Musings go here." id="notes-text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>
+          <br>
+          
+          <input id="button" type="submit" value="Save">
+          </form>
+        </div>
+
+      <div class="card mb-3 col-md-8" style="display: none;">
         <div>
           <!-- coffee image-->
           <div id="image">
             <img id="coffee-pic" src="" class="img-fluid rounded-top" alt="Photo of the coffee you searched">
           </div>
-          <!-- coffee description and ingredients -->
+          <!-- coffee description -->
           <div class="card-body">
             <div class = coffeedescription>
-              <h5 class="card-title " id="title">Card title</h5>
-              <p class="card-text" id="description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div> 
-            <p class="card-text" id="ingredients"><small class="text-muted">Last updated 3 mins ago</small></p>
-            <p class="card-text" id="nutrition">Nutritional Data Goes Here</p>
-            <h3 id="calories" class="calories"></h3>
-            <h3 id="fat"></h3>
-            <h3 id="sugars"></h3>
-          </div>
+             <h5 class="card-title " id="title">Card title</h5>
+             <p class="card-text" id="description">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+             <!-- coffee ingredients -->
+             <p class="card-text" id="ingredients"><small class="text-muted">Last updated 3 mins ago</small></p>
+             <!-- nutritional info list -->
+             <h5>Nutritional Information:</h5>
+             <ul id="nutrition">nutrition info placeholder</ul>
 
-          <!-- <add nutritional info here somehow... if we can't figure how to combine it on the same card, may need side-by-side or stacked cards> -->
+          </div>
 
         </div>
       </div>
