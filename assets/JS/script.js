@@ -18,12 +18,17 @@ function getSearch(coffeeDrink){
         method: "GET"
     }).then(function(response){
         console.log(response);
-        // var CoffeeImage =response[1].image;
-        // $(image).html('<img src='+CoffeeImage+'>');
+        
+        //var CoffeeImage =response[1].image;
+        //$(image).html('<img src='+CoffeeImage+'>');
+        var coffee = response.find(el => el.title.toLowerCase() === coffeeDrink.toLowerCase());
+        $("#coffee-pic").attr('src', coffee.image);
         // console.log(image)
-        $(title).html(response[1].title)
-        $(description).html(response[1].description)
-        $(ingredients).html(response[1].ingredients)
+        $(title).html(coffee.title);
+        $(description).html(coffee.description);
+        $(ingredients).html(coffee.ingredients.join(', '));
+
+        $(image).parent().parent().css("display", "flex");
     })
 }
 
@@ -48,7 +53,15 @@ fetch('https://nutritionix-api.p.rapidapi.com/v1_1/search/coffee?fields=item_nam
 
 
 
-getSearch()
+
+// this function is for the earch event using the search button or hitting enter
+$("#search-button").click(e => getSearch($(e.target).prev().val())).prev().keypress(function (e) {
+   // key  13 is the enter button
+    if (e.which == 13) {
+      $("#search-button").click();
+      return false;    //<---- Add this line
+    }
+  });;
 ////////////onclick listeners////////////
 
 // $('#form-search').on("click", getSearch);  /// id in html needs to match this///
