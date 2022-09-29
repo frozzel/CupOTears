@@ -50,7 +50,7 @@ function getSearch(coffeeDrink){
         //$(image).html('<img src='+CoffeeImage+'>');
         var coffee = response.find(el => el.title.toLowerCase() === coffeeDrink.toLowerCase());
         $("#coffee-pic").attr('src', coffee.image);
-        // console.log(image)
+        // console.log(image)git 
         $(title).html(coffee.title);
         $(description).html(coffee.description);
         //since ingredients are an array used the join to separate with a comma and space
@@ -81,7 +81,7 @@ fetch("https://nutritionix-api.p.rapidapi.com/v1_1/search/" + searchBar + "?fiel
 	.then(response => {console.log(response)})
          //display facts on page//
    
-         
+
 // this function is for the search event using the search button or hitting enter
 $("#search-button").click(e => getSearch($(e.target).prev().val())).prev().keypress(function (e) {
    // key  13 is the enter button
