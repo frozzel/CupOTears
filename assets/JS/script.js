@@ -6,8 +6,35 @@ var coffeeImg = $("#coffee-pic")
 var coffeeInfo = $("#description")
 var ingredients = $("#ingredients")
 
+// autocomplete section 
+var availableDrinks = ['Black', 'Latte', 'Cappuccino', 'Americano', 'Espresso', 'Doppio', 'Cortado', 'Red Eye', 'Galao', 'Lungo', 'Macchiato', 'Mocha', 'Ristretto', 'Flat White', 'Affogato', 'Cafe au Lait', 'Irish', 'Guayoyo', 'Cortadito', 'Aguapanela Coffee'];
 
+function autocompleteMatch(input) {
+    if (input == '') {
+      return [];
+    }
 
+    var reg = new RegExp(input)
+    return availableDrinks.filter(function(term) {
+        if (term.match(reg)) {
+          return term;
+        }
+    });
+  }
+
+function showResults(value) {
+    result = document.getElementById("result");
+    result.innerHTML = '';
+    var list = '';
+    var terms = autocompleteMatch(value);
+
+    for (i=0; i<terms.length; i++) {
+      list += '<li>' + terms[i] + '</li>';
+    }
+
+    result.innerHTML = '<ul>' + list + '</ul>';
+}
+// end of autocomplete
 
 ////////// Api Call ///////////////////
 
