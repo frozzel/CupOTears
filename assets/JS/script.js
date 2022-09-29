@@ -27,12 +27,17 @@ function showResults(value) {
     result.innerHTML = '';
     var list = '';
     var terms = autocompleteMatch(value);
+    var notFound = 'Never heard of that one. Try again!'
 
-    for (i=0; i<terms.length; i++) {
-      list += '<li>' + terms[i] + '</li>';
+    if (terms.length > 0) {
+        for (i=0; i<terms.length; i++) {
+        list += '<li>' + terms[i] + '</li>';
+        }
+        result.innerHTML = '<ul>' + list + '</ul>';
+    } else {
+        result.innerHTML = notFound;
     }
-
-    result.innerHTML = '<ul>' + list + '</ul>';
+   
 }
 // end of autocomplete
 
