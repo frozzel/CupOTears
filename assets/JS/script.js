@@ -5,7 +5,7 @@ var searchHistory = $(".container-fluid")
 var coffeeImg = $("#coffee-pic")
 var coffeeInfo = $("#description")
 var ingredients = $("#ingredients")
-
+var SearchInp;
 // autocomplete section 
 var availableDrinks = ['Black', 'Latte', 'Cappuccino', 'Americano', 'Espresso', 'Doppio', 'Cortado', 'Red Eye', 'Galao', 'Lungo', 'Macchiato', 'Mocha', 'Ristretto', 'Flat White', 'Affogato', 'Cafe au Lait', 'Irish', 'Guayoyo', 'Cortadito', 'Aguapanela Coffee'];
 
@@ -50,7 +50,7 @@ function getSearch(coffeeDrink){
         method: "GET"
     }).then(function(response){
         console.log(response);
-        
+        SearchInp= coffeeDrink
         //var CoffeeImage =response[1].image;
         //$(image).html('<img src='+CoffeeImage+'>');
         var coffee = response.find(el => el.title.toLowerCase() === coffeeDrink.toLowerCase());
@@ -62,6 +62,8 @@ function getSearch(coffeeDrink){
         $(ingredients).html(coffee.ingredients.join(', '));
 
         $(image).parent().parent().css("display", "flex");
+        console.log(SearchInp)
+        getNuts()
     })
 }
 
@@ -81,11 +83,11 @@ const options = {
 	}
 };
 
-fetch('https://nutritionix-api.p.rapidapi.com/v1_1/search/coffee?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat', options)
+function getNuts(){fetch('https://nutritionix-api.p.rapidapi.com/v1_1/search/' + SearchInp+  '?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat%2Cnf_sugars', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
-         
+}
 // this function is for the search event using the search button or hitting enter
 $("#search-button").click(e => getSearch($(e.target).prev().val())).prev().keypress(function (e) {
    // key  13 is the enter button
@@ -95,6 +97,7 @@ $("#search-button").click(e => getSearch($(e.target).prev().val())).prev().keypr
       return false;    //<---- Add this line
     }
   });;
+  
 ////////////onclick listeners////////////
 
 // $('#form-search').on("click", getSearch);  /// id in html needs to match this///
