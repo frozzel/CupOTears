@@ -26,6 +26,7 @@ function getSearch(coffeeDrink){
         // console.log(image)
         $(title).html(coffee.title);
         $(description).html(coffee.description);
+        //since ingredients are an array used the join to separate with a comma and space
         $(ingredients).html(coffee.ingredients.join(', '));
 
         $(image).parent().parent().css("display", "flex");
