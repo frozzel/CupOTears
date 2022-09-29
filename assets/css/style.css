@@ -48,6 +48,17 @@ main {
     background: #eee;
 }
 
+
+/* coffee notes stuff */
+#wrapper {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#coffee-notes {
+    font-weight: bold;
+}
+/* end coffee notes stuff */
+
 #container {
     border: 5px solid black;
     border-radius: 10px 100px / 120px;
