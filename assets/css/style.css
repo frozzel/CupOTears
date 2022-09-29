@@ -48,6 +48,7 @@ main {
     background: #eee;
 }
 
+
 /* coffee notes stuff */
 #wrapper {
     font-family: 'Courier New', Courier, monospace;
@@ -55,4 +56,39 @@ main {
 
 #coffee-notes {
     font-weight: bold;
+}
+/* end coffee notes stuff */
+
+#container {
+    border: 5px solid black;
+    border-radius: 10px 100px / 120px;
+    padding: 300px;
+    background-color: white;
+}
+
+.card-body {
+    position:relative;
+    top: 280px;
+    right:260px;
+}
+
+#coffee-pic{
+    position: relative;
+    bottom:160px;
+    right:260px
+}
+
+#nutrition {
+    border-style: solid;
+    position: relative;
+    bottom: 780px;
+    left:120px;
+    height: 500px;
+    width: 200px;
+}
+
+.coffeedescription{
+    border-style: solid;
+    width: 700px;
+    bottom:2000px;
 }
