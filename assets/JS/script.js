@@ -37,9 +37,14 @@ function showResults(value) {
     } else {
         result.innerHTML = notFound;
     }
-   
 }
 // end of autocomplete
+
+// "Coffee Notes Section (local storage)"
+
+
+
+// end of local storage
 
 ////////// Api Call ///////////////////
 
