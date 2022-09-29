@@ -1,7 +1,10 @@
 /////////////Varibles//////////////////
-
-
-
+var navBar = $(".nav-link")
+var searchBar = $("#search-button")
+var searchHistory = $(".container-fluid")
+var coffeeImg = $("#coffee-pic")
+var description = $("#description")
+var ingredients = $("#ingredients")
 
 
 
@@ -53,11 +56,12 @@ fetch('https://nutritionix-api.p.rapidapi.com/v1_1/search/cappuccino?fields=item
 
 
 
-// this function is for the earch event using the search button or hitting enter
+// this function is for the search event using the search button or hitting enter
 $("#search-button").click(e => getSearch($(e.target).prev().val())).prev().keypress(function (e) {
    // key  13 is the enter button
     if (e.which == 13) {
       $("#search-button").click();
+      console.log ("return");
       return false;    //<---- Add this line
     }
   });;
