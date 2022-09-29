@@ -49,5 +49,33 @@ main {
 }
 
 #container {
+    border: 5px solid black;
+    border-radius: 10px 100px / 120px;
+    padding: 300px;
+    background-color: white;
+}
 
+.card-body {
+    position:relative;
+    top: 280px;
+    right:260px;
+}
+
+#coffee-pic{
+    position: relative;
+    bottom:160px;
+    right:260px
+}
+
+#nutrition {
+    border-style: solid;
+    position: relative;
+    bottom: 380px;
+    left:550px;
+}
+
+.coffeedescription{
+    border-style: solid;
+    padding: 10px 10px;
+    width: 7add00px;
 }
