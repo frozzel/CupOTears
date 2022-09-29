@@ -52,11 +52,11 @@
     <div class="row m-2">
       <!-- search bar & button -->
       <div class="col-md-4">
-        <div class="form-group mb-3"> <!-- gotta fix styling, had to change to form -->
+        <div class="input-group mb-3"> 
           <input type="text" name="q" id="q" onKeyUp="showResults(this.value)" class="form-control" placeholder="Search a Coffee!">
           <button class="btn" type="button" id="search-button">Get Coffee</button>
-          <div id="result"></div>
         </div>
+        <div id="result" class="mb-3"></div> <!-- where autocomplete displays -->
 
         <!-- search history container -->
         <div class="container-fluid">
