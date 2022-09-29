@@ -3,7 +3,7 @@ var navBar = $(".nav-link")
 var searchBar = $("#search-button")
 var searchHistory = $(".container-fluid")
 var coffeeImg = $("#coffee-pic")
-var description = $("#description")
+var coffeeInfo = $("#description")
 var ingredients = $("#ingredients")
 
 
@@ -51,9 +51,18 @@ const options = {
 
 fetch('https://nutritionix-api.p.rapidapi.com/v1_1/search/cappuccino?fields=item_name%2Cnf_calories%2Cnf_total_fat%2Citem_description', options)
 	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-
+	.then(response => {
+         //display facts on page//
+        for(let description of Object.values(response)){
+        let coffedesc = document.getElementById(".info");
+        coffedesc.innerText = description;
+        coffeeInfo.append(coffedesc);
+        console.log(description);
+        }
+    })
+       
+    
+	
 
 
 // this function is for the search event using the search button or hitting enter
