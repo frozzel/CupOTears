@@ -78,21 +78,10 @@ const options = {
 
 fetch("https://nutritionix-api.p.rapidapi.com/v1_1/search/" + searchBar + "?fields=item_name%2Cnf_calories%2Cnf_total_fat%2Citem_description", options)
 	.then(response => response.json())
-	.then(response => {
-        console.log(response)
+	.then(response => {console.log(response)})
          //display facts on page//
-        // for(let description of Object.values(response)){
-        // let coffedesc = document.getElementById(".info");
-        // coffedesc.innerText = description;
-        // coffeeInfo.append(coffedesc);
-        // console.log(description);
-        // }
-    })
-       
-    
-	
-
-
+   
+         
 // this function is for the search event using the search button or hitting enter
 $("#search-button").click(e => getSearch($(e.target).prev().val())).prev().keypress(function (e) {
    // key  13 is the enter button
