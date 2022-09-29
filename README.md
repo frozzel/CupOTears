@@ -40,6 +40,9 @@ BootStrap 5.2      (https://getbootstrap.com/)
 
 RapidApi   (https://rapidapi.com/msilverman/api/nutritionix-nutrition-database)
 
+Nutritionix (Nutrithttps://docs.google.com/spreadsheets/d/1jZSa039OfpQOiRzaS980nPKCvVe2TRKRPZk7ZbaH7kE/edit#gid=0ionix) &&
+            (https://developer.nutritionix.com/docs/v1_1)
+
 
 ## License
 

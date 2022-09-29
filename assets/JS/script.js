@@ -91,6 +91,13 @@ const options = {
 function getNuts(){fetch('https://nutritionix-api.p.rapidapi.com/v1_1/search/' + SearchInp+  '?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat%2Cnf_sugars', options)
 	.then(response => response.json())
 
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+    // $(calories).html(response.hits[1].fields.nf_calories)
+}
+
+
+
 // this function is for the search event using the search button or hitting enter
 $("#search-button").click(e => getSearch($(e.target).prev().val())).prev().keypress(function (e) {
    // key  13 is the enter button
@@ -100,7 +107,7 @@ $("#search-button").click(e => getSearch($(e.target).prev().val())).prev().keypr
       return false;    //<---- Add this line
     }
   });;
-  
+
 ////////////onclick listeners////////////
 
 // $('#form-search').on("click", getSearch);  /// id in html needs to match this///
