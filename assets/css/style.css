@@ -70,12 +70,12 @@ main {
 #nutrition {
     border-style: solid;
     position: relative;
-    bottom: 380px;
-    left:550px;
+    bottom: 180px;
+    left:280px;
 }
 
 .coffeedescription{
     border-style: solid;
     padding: 10px 10px;
-    width: 7add00px;
+    width: 700px;
 }
