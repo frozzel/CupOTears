@@ -49,3 +49,10 @@ main {
 }
 
 /* coffee notes stuff */
+#wrapper {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#coffee-notes {
+    font-weight: bold;
+}
