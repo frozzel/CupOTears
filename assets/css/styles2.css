@@ -2,21 +2,22 @@
     background-color: #3a2e2e;
     border-bottom: solid whitesmoke .5px;
     opacity: .6;
-    color: rgba(245, 245, 245, 1.0);
+    color: whitesmoke;
 }
 
 .navbar::before {
     opacity: .6;
-    color: rgba(245, 245, 245, 1.0);
+    color: whitesmoke;
 }
 
 .navbar-brand {
     opacity: 1;
-    color: rgba(245, 245, 245, 1.0);
+    color: whitesmoke;
+    pointer-events: none;
 }
 
-.navbar-brand {
-    color: rgba(245, 245, 245, 1.0);
+.nav-link {
+    color: whitesmoke;
 }
 
 .body {
@@ -24,7 +25,6 @@
     background-image: url('../images/wallpaperflare.com_wallpaper.jpg');
     background-position: center;
     background-size: auto;
-
 }
 
 .fixedtop {
@@ -76,7 +76,6 @@
     font-weight: bold;
     background-color: #3a2e2e;
     color: whitesmoke;
-
 }
 
 #notes-text {
@@ -85,7 +84,6 @@
     padding: 0px 5px 0px;
     font-family: 'Courier New', Courier, monospace;
     border: solid 0.5px gainsboro;
-
 }
 
 #save-button {
@@ -108,6 +106,4 @@
     border-radius: 500px;
     width: 300px;
     height: auto;
-
-
 }
