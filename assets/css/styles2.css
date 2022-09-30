@@ -1,30 +1,30 @@
-
 .navbar {
     background-color: #3a2e2e;
-   
     border-bottom: solid whitesmoke .5px;
     opacity: .6;
-    color: rgba(245,245,245, 1.0);
+    color: rgba(245, 245, 245, 1.0);
 }
-.navbar::before{
+
+.navbar::before {
     opacity: .6;
-    color: rgba(245,245,245, 1.0);
+    color: rgba(245, 245, 245, 1.0);
 }
+
 .navbar-brand {
     opacity: 1;
-    color: rgba(245,245,245, 1.0);
+    color: rgba(245, 245, 245, 1.0);
 }
+
 .navbar-brand {
-    color:rgba(245,245,245, 1.0);
+    color: rgba(245, 245, 245, 1.0);
 }
 
 .body {
-   
     background-color: #3a2e2e;
     background-image: url('../images/wallpaperflare.com_wallpaper.jpg');
     background-position: center;
     background-size: auto;
-   
+
 }
 
 .fixedtop {
@@ -34,17 +34,20 @@
     align-content: center;
     width: 600px;
 }
+
 #search-button {
-    background-color:  #3a2e2e;
+    background-color: #3a2e2e;
     color: whitesmoke;
     opacity: .8;
     border: 1px solid gray;
 }
-.form-control{
+
+.form-control {
     background-color: #3a2e2e;
     color: whitesmoke;
     opacity: .8;
 }
+
 #result ul {
     list-style-type: none;
     padding: 0;
@@ -63,23 +66,26 @@
     color: #3a2e2e;
     background: #eee;
 }
+
 .card {
     opacity: .8;
 }
+
 #notes-header {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     background-color: #3a2e2e;
     color: whitesmoke;
-   
+
 }
+
 #notes-text {
     background-color: whitesmoke;
     color: #3a2e2e;
     padding: 0px 5px 0px;
     font-family: 'Courier New', Courier, monospace;
     border: solid 0.5px gainsboro;
-    
+
 }
 
 #save-button {
@@ -90,16 +96,18 @@
     opacity: .8;
     border-radius: 13px;
 }
+
 .card-body {
     background-color: #3a2e2e;
     color: whitesmoke;
     opacity: .8;
 }
-#coffee-pic{
+
+#coffee-pic {
     border-color: solid whitesmoke 10px;
     border-radius: 500px;
     width: 300px;
     height: auto;
-    
-   
+
+
 }
