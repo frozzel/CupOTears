@@ -29,7 +29,9 @@ main {
     width: 50%;
 }
 
-/* #result {
+/* begin auto-complete section
+
+/* #result {      a thin border for the dropdown if we want it
     border: 1px dotted #ccc;
     padding: 3px;
 } */
@@ -47,6 +49,29 @@ main {
 #result ul li:hover {
     background: #eee;
 }
+/* end auto-complete section */
+
+/* begin coffee notes section */
+#notes-header {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: khaki;
+}
+
+#notes-text {
+    background-color: beige;
+    padding: 0px 5px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid 0.5px gainsboro;
+}
+
+#save-button {
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: bisque;
+    border-radius: 5px;
+}
+/* end coffee notes section */
 
 #container {
     border: 5px solid black;

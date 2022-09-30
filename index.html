@@ -58,18 +58,23 @@
         </div>
         <div id="result" class="mb-3"></div> <!-- where autocomplete displays -->
 
-        <!-- search history container -->
-        <div class="container-fluid">
-          <p>this is where the search history will go. it should fit inside the alotted space. </p>
+      <!-- begin coffee notes section -->
+      <div class="card">
+        <h5 class="card-header" id="notes-header">Coffee Notes:</h5>
+        <textarea id="notes-text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px;"></textarea>
+        
         </div>
+          <input id="save-button" type="submit" value="Save Notes" style="float: right">
+        </div>
+      </div>
+      <!-- end coffee notes section -->
+
         <div class ="info">Coffee Info</div>
         <h3 id="calories" class="">Calories:</h3>
             <h3 id="fat">Fat:</h3>
             <h3 id="sugars">Sugars:</h3>
-      </div>
 
-      <div id="container" class=>
-        <!-- need to fix right side card spacing -->
+      <div id="container" style="display: none">
         <div>
           <!-- coffee image-->
           <div id="image">
