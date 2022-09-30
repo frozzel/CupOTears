@@ -2,17 +2,18 @@
     background-color: #3a2e2e;
     border-bottom: solid whitesmoke .5px;
     opacity: .6;
-    color: rgba(245, 245, 245, 1.0);
+    color: whitesmoke;
 }
 
 .navbar::before {
     opacity: .6;
-    color: rgba(245, 245, 245, 1.0);
+    color: whitesmoke;
 }
 
 .navbar-brand {
     opacity: 1;
-    color: rgba(245, 245, 245, 1.0);
+    color: whitesmoke;
+    pointer-events: none;
 }
 
 .nav-link {
