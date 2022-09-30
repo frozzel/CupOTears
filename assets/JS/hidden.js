@@ -12,3 +12,13 @@ messages.forEach(function(wordDisplay, i) {
 });
 //End Countdown//
 
+setTimeout(() => {
+    wordDisplay = document.getElementById('wordDisplay');
+  
+    // 👇️ removes element from DOM
+    wordDisplay.style.display = 'none';
+  
+    // 👇️ hides element (still takes up space on page)
+    // box.style.visibility = 'hidden';
+  }, 17000); // 👈️ time in milliseconds
+  
