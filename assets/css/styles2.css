@@ -26,13 +26,16 @@
     background-position: center;
     background-size: auto;
 }
+.row{
+    padding: 20px 10px;
+}
 
-.fixedtop {
-    position: absolute;
-    left: 33%;
-    top: 12%;
-    align-content: center;
-    width: 600px;
+img {
+    width: 500px;
+}
+.boxes{
+display: flex;
+justify-content: space-around;
 }
 
 #search-button {
@@ -107,6 +110,8 @@
     background-color: #3a2e2e;
     color: whitesmoke;
     opacity: .8;
+    border-radius: 13px;
+    padding: 10px;
 }
 
 #coffee-pic {
