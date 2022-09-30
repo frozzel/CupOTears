@@ -43,7 +43,7 @@ RapidApi   (https://rapidapi.com/msilverman/api/nutritionix-nutrition-database)
 Nutritionix (Nutrithttps://docs.google.com/spreadsheets/d/1jZSa039OfpQOiRzaS980nPKCvVe2TRKRPZk7ZbaH7kE/edit#gid=0ionix) &&
             (https://developer.nutritionix.com/docs/v1_1)
 
-
+Fairus Azian Ismail (https://www.pinterest.com/pin/111253053285023729/)
 ## License
 
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
