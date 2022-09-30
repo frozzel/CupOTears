@@ -50,6 +50,8 @@
           <input type="text" name="q" id="q" onKeyUp="showResults(this.value)" class="form-control"
             placeholder="Search a Coffee!">
           <button class="btn" type="button" id="search-button">Get Coffee</button>
+          <p id="wordDisplayJS"></p>
+          <p id="coffeeTimer"></p>
         </div>
         <div id="result" class="mb-3"></div> <!-- where autocomplete displays -->
 
@@ -81,6 +83,7 @@
         <p>Calories: <span id="calories"></span></p>
         <P>Sugars: <span id="sugars"></span></P>
 
+        <h1 id="wordDisplay"></h1>
         <!-- coffee image-->
         <div id="image">
           <img id="coffee-pic" src="" class="img-fluid rounded-top" alt="Photo of the coffee you searched">
