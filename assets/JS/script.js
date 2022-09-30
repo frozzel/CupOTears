@@ -42,9 +42,17 @@ function showResults(value) {
 // end autocomplete section
 
 // begin coffee notes section
+if (localStorage["notes-text"]) {
+  var notesText = localStorage["notes-text"] ;
+  document.getElementById("notes-text").value = notesText ;
+} else {
+  document.getElementById("notes-text").placeholder = "What's on your mind?";
+}
 
-// (nothing in here yet)
-
+document.getElementById("save-button").addEventListener("click", function () {
+    var notesText = document.getElementById("notes-text").value;
+    localStorage.setItem("notes-text", notesText);
+} , false);
 // end coffee notes section
 
 ////////// Api Call ///////////////////

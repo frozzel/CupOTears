@@ -52,12 +52,24 @@ main {
 /* end auto-complete section */
 
 /* begin coffee notes section */
-#wrapper {
+#notes-header {
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: khaki;
 }
 
-#coffee-notes {
-    font-weight: bold;
+#notes-text {
+    background-color: beige;
+    padding: 0px 5px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid 0.5px gainsboro;
+}
+
+#save-button {
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: bisque;
+    border-radius: 5px;
 }
 /* end coffee notes section */
 
