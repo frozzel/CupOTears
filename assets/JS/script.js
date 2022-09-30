@@ -8,7 +8,7 @@ var ingredients = $("#ingredients")
 var SearchInp;
 
 // begin autocomplete section 
-var availableDrinks = ['Black', 'Latte', 'Cappuccino', 'Americano', 'Espresso', 'Doppio', 'Cortado', 'Red Eye', 'Galao', 'Lungo', 'Macchiato', 'Mocha', 'Ristretto', 'Flat White', 'Affogato', 'Cafe au Lait', 'Irish', 'Guayoyo', 'Cortadito', 'Aguapanela Coffee'];
+var availableDrinks = ['Black', 'Latte', 'Cappuccino', 'Americano', 'Espresso', 'Doppio', 'Cortado', 'Red Eye', 'Galão', 'Lungo', 'Macchiato', 'Mocha', 'Ristretto', 'Flat White', 'Affogato', 'Café au Lait', 'Irish', 'Guayoyo', 'Cortadito', 'Aguapanela Coffee'];
 
 function autocompleteMatch(input) {
   if (input == '') {
