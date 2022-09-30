@@ -1,8 +1,7 @@
 # CupOTears
-Search for coffee recipes and see there nutritional value
+Here at CupOTears we know how important it is to have your favorite cup of joe in front of you to pour you tears into as you face those coding challenges.  With that in mind, we created this site for you to search all the amazing coffee beverages out there to see how the different drinks are made as well as their nutritional value.
 ## Description
-
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+When you arrive to the site you will see a search bar to search popular coffee beverages from around the world.  Explore some of your favorite beverages or check out some new ones.  The autocomplete feature displays a drop down list of available drinks to search.  If you have found yourself on our site, you must love coffee as much as we do. So take a look and find yourself the perfect drink to pour your tears into. Once you choose a beverage to search, the results will diplay on the right side of the page with ,a detailed description of the drink, it's ingredients, nutrition facts, and a beautiful image of the beverage.
 
 - What was your motivation?
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
