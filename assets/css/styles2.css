@@ -48,6 +48,13 @@
     opacity: .8;
 }
 
+/* autocomplete section */
+#result {
+    color: whitesmoke;
+    background-color: #3a2e2e;
+    margin-left: 1%;
+}
+
 #result ul {
     list-style-type: none;
     padding: 0;
@@ -66,6 +73,7 @@
     color: #3a2e2e;
     background: #eee;
 }
+/* end autocomplete section */
 
 .card {
     opacity: .8;

@@ -50,12 +50,14 @@
       </div>
       <div class="row">
         <div class="col-4">
+          <!-- begin searchbar -->
           <div class="input-group mb-3">
             <input type="text" name="q" id="q" onKeyUp="showResults(this.value)" class="form-control"
               placeholder="Search a Coffee!">
             <button class="btn" type="button" id="search-button">Get Coffee</button>
           </div>
           <div id="result" class="mb-3"></div> <!-- where autocomplete displays -->
+          <!-- end searchbar -->
         
           <!-- begin coffee notes section -->
           <div class="card">
@@ -65,11 +67,12 @@
           </div>
           <input id="save-button" type="submit" value="Save Notes" style="float: right">
           <!-- end coffee notes section -->
-
         </div>
+        
         <div class="col-4">
-
         </div>
+        
+
         <div class="col-4">
             <div class="card-body">
               <div class="coffeedescription">
@@ -91,24 +94,10 @@
         </div>
     </div>
 
-    
-    
-
-
-
 
   </main>
 
-
-
-
-
-
-
-
-
-
-
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="./assets/JS/script.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./assets/JS/hidden.js"></script>
+    <script src="./assets/JS/script.js"></script>
 </body>
