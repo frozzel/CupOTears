@@ -60,6 +60,7 @@ main {
 
 #notes-text {
     background-color: beige;
+    background: url(/assets/images/Notepaper.jpg);
     padding: 0px 5px 0px;
     font-family: 'Courier New', Courier, monospace;
     border: solid 0.5px gainsboro;
