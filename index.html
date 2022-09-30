@@ -26,7 +26,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <div class="collapse navbar-collapse" id="navmenu">
           <!-- added collapse-->
           <ul class="navbar-nav ms-auto">
@@ -47,8 +47,9 @@
       <div class="boxes">
         <img src="./assets/images/Low Resolution Logo - Transparent Backgroundwhte.png"
        alt="coffee beans gathered on a light wooden table" class="img-fluid">
+       <h1 id="wordDisplay"></h1>
       </div>
-      <div class="row">
+      <div class="row hidden" id="searchbar">
         <div class="col-4">
           <!-- begin searchbar -->
           <div class="input-group mb-3">
@@ -71,10 +72,9 @@
         
         <div class="col-4">
         </div>
-        
 
         <div class="col-4">
-            <div class="card-body">
+            <div class="card-body hidden">
               <div class="coffeedescription">
                 <h5 class="card-title " id="title">Card title</h5>
                 <p class="card-text" id="description">This is a wider card with supporting text below as a natural lead-in to
@@ -85,7 +85,6 @@
               <p>Fat: <span id="fat"></span></p>
               <p>Calories: <span id="calories"></span></p>
               <P>Sugars: <span id="sugars"></span></P>
-              <h1 id="wordDisplay"></h1>
               <!-- coffee image-->
               <div id="image">
                 <img id="coffee-pic" src="" class="img-fluid">

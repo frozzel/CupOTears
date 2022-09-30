@@ -119,3 +119,16 @@
 #q {
     background-color: whitesmoke;
 }
+
+.hidden {
+    display: none;
+}
+
+#wordDisplay {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+.boxes {
+    text-align: center;
+}
