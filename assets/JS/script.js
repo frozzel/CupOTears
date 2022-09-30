@@ -76,7 +76,6 @@ function getSearch(coffeeDrink){
         $(ingredients).html(coffee.ingredients.join(', '));
 
         $(image).parent().parent().css("display", "flex");
-        console.log(SearchInp)
         getNuts()
     })
 }
@@ -88,7 +87,6 @@ function getSearch(coffeeDrink){
 
 
 ////// ^^^^^ check readme links ///////// example search "item_name,item_id,brand_name,nf_calories,nf_total_fat" //// 
-
 const options = {
 	method: 'GET',
 	headers: {
@@ -97,11 +95,25 @@ const options = {
 	}
 };
 
+
 function getNuts(){fetch('https://nutritionix-api.p.rapidapi.com/v1_1/search/' + SearchInp+  '?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat%2Cnf_sugars', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-    // $(calories).html(response.hits[1].fields.nf_calories)
+.then(function (response) {
+  return response.json();
+})
+.then(function (data) {
+  $(fat).html(data.hits[1].fields.nf_total_fat)
+  $(calories).html(data.hits[1].fields.nf_calories)
+  $(sugars).html(data.hits[1].fields.nf_sugars)
+	// .then(response => response.json())
+	// .then(response => console.log(response))
+  // .then((result) => {console.log('Success:', result)
+	// .catch(err => console.error(err));
+  console.log(data)
+
+ 
+  
+})
+  
 }
 // this function is for the search event using the search button or hitting enter
 $("#search-button").click(e => getSearch($(e.target).prev().val())).prev().keypress(function (e) {
@@ -112,7 +124,3 @@ $("#search-button").click(e => getSearch($(e.target).prev().val())).prev().keypr
       return false;    //<---- Add this line
     }
   });;
-
-////////////onclick listeners////////////
-
-// $('#form-search').on("click", getSearch);  /// id in html needs to match this///
