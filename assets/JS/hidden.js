@@ -1,7 +1,7 @@
 //Message Countdown, variables for Countdown//
 let messages = ["Welcome", "to", "CupOTears.","Search", "your", "favorite", "coffee", "drink", "while", "you", "cry."];
 
-let delay = 2000;
+let delay = 1300;
 
 let coffeeMsg = document.getElementById("wordDisplay");
 //Function for countdown//
