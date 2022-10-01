@@ -41,6 +41,7 @@ function showResults(value) {
 
   function autoFill() {
     q.value = this.textContent;
+    q.focus();
   }
 
   for(i=0;i<=result.childElementCount-1;i++) {
