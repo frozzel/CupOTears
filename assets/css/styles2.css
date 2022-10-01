@@ -35,7 +35,7 @@ img {
 }
 .boxes{
 display: flex;
-justify-content: space-around;
+justify-content: center;
 }
 
 #search-button {
@@ -129,7 +129,7 @@ justify-content: space-around;
     background-color: whitesmoke;
 }
 
-.hidden {
+/* .hidden {
     display: none;
 }
 
@@ -140,4 +140,4 @@ justify-content: space-around;
 }
 .boxes {
     text-align: center;
-}
+} */
