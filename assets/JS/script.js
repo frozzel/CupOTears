@@ -1,4 +1,3 @@
-/////////////Varibles//////////////////
 var navBar = $(".nav-link")
 var searchBar = $("#search-button")
 var searchHistory = $(".container-fluid")
@@ -64,8 +63,9 @@ document.getElementById("save-button").addEventListener("click", function () {
 }, false);
 // end coffee notes section
 
-////////// Api Call ///////////////////
+// begin API section
 
+// coffee info API
 function getSearch(coffeeDrink) {
   var URLAPI = 'https://api.sampleapis.com/coffee/hot';
   $.ajax({
@@ -89,13 +89,6 @@ function getSearch(coffeeDrink) {
   })
 }
 
-//Second API for Nutritional Facts//
-
-////////////// ^^^^^^^^^ Need to adjust Dom based on search////////
-////////// Test new Api NutritionIX /////////////
-
-
-////// ^^^^^ check readme links ///////// example search "item_name,item_id,brand_name,nf_calories,nf_total_fat" //// 
 const options = {
   method: 'GET',
   headers: {
@@ -104,7 +97,7 @@ const options = {
   }
 };
 
-
+// nutritional info API
 function getNuts() {
   fetch('https://nutritionix-api.p.rapidapi.com/v1_1/search/' + SearchInp + '?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat%2Cnf_sugars', options)
   .then(function (response) {
@@ -119,19 +112,17 @@ function getNuts() {
     // .then((result) => {console.log('Success:', result)
     // .catch(err => console.error(err));
     console.log(data)
-
-
-
   })
 
 }
-// this function is for the search event using the search button or hitting enter
+// end API section
+
+// begin search function
 $("#search-button").click(e => getSearch($(e.target).prev().val())).prev().keypress(function (e) {
-  // key  13 is the enter button
-  if (e.which == 13) {
+  if (e.which == 13) {   // key 13 is the enter key
     $("#search-button").click();
     console.log("return");
-    return false;    //<---- Add this line
+    return false;
   }
 });;
-
+// end search function
