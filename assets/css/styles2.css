@@ -56,6 +56,8 @@ justify-content: space-around;
     color: whitesmoke;
     background-color: #3a2e2e;
     margin-left: 1%;
+    padding-left: 12px;
+    list-style: none;
 }
 
 #result ul {
@@ -64,17 +66,18 @@ justify-content: space-around;
     margin: 0;
 }
 
-#result ul li {
+#result li {
     background-color: #3a2e2e;
     color: whitesmoke;
     opacity: .8;
     padding: 5px 0;
 }
 
-#result ul li:hover {
+#result li:hover {
     background-color: whitesmoke;
     color: #3a2e2e;
-    background: #eee;
+    background: whitesmoke;
+    opacity: .8;
 }
 /* end autocomplete section */
 
@@ -122,6 +125,7 @@ justify-content: space-around;
 }
 
 #q {
+    color: #3a2e2e;
     background-color: whitesmoke;
 }
 

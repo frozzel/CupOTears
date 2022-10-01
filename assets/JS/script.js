@@ -8,7 +8,7 @@ var ingredients = $("#ingredients")
 var SearchInp;
 
 // begin autocomplete section 
-var availableDrinks = ['Black', 'Latte', 'Cappuccino', 'Americano', 'Espresso', 'Doppio', 'Cortado', 'Red Eye', 'Galao', 'Lungo', 'Macchiato', 'Mocha', 'Ristretto', 'Flat White', 'Affogato', 'Cafe au Lait', 'Irish', 'Guayoyo', 'Cortadito', 'Aguapanela Coffee'];
+var availableDrinks = ['Black', 'Latte', 'Cappuccino', 'Americano', 'Espresso', 'Doppio', 'Cortado', 'Red Eye', 'Galão', 'Lungo', 'Macchiato', 'Mocha', 'Ristretto', 'Flat White', 'Affogato', 'Café au Lait', 'Irish', 'Guayoyo', 'Cortadito', 'Aguapanela Coffee'];
 
 function autocompleteMatch(input) {
   if (input == '') {
@@ -34,9 +34,17 @@ function showResults(value) {
     for (i = 0; i < terms.length; i++) {
       list += '<li>' + terms[i] + '</li>';
     }
-    result.innerHTML = '<ul>' + list + '</ul>';
+    result.innerHTML = list;
   } else {
     result.innerHTML = notFound;
+  } 
+
+  function autoFill() {
+    q.value = this.textContent;
+  }
+
+  for(i=0;i<=result.childElementCount-1;i++) {
+    result.children[i].addEventListener("click",autoFill);
   }
 }
 // end autocomplete section
