@@ -49,15 +49,15 @@
         <img src="./assets/images/Low Resolution Logo - Transparent Backgroundwhte.png">
        <h1 id="wordDisplay"></h1>
       </div>
-      <div class="row hidden" id="searchbar">
+      <div class="row">
         <div class="col-4">
           <!-- begin searchbar -->
-          <div class="input-group mb-3">
+          <div class="input-group">
             <input type="text" name="q" id="q" onKeyUp="showResults(this.value)" class="form-control"
               placeholder="Search a Coffee!">
             <button class="btn" type="button" id="search-button">Get Coffee</button>
           </div>
-          <div id="result" class="mb-3"></div> <!-- where autocomplete displays -->
+          <ul id="result" class="mb-3"></ul> <!-- where autocomplete displays -->
           <!-- end searchbar -->
         
           <!-- begin coffee notes section -->
@@ -75,7 +75,7 @@
 
         <div class="col-4">
 
-            <div class="card-body hidden">
+    
           <div class="container" style="display: none;">
             <div class="card-body">
               <div class="coffeedescription">
@@ -84,7 +84,7 @@
                   additional content. This content is a little bit longer.</p>
               </div>
               <p class="card-text" id="ingredients"><small class="text-muted">Last updated 3 mins ago</small></p>
-              <p class="card-text" id="nutrition">Nutritional Data Goes Here</p>
+              <p class="card-text" id="nutrition">Nutrition Facts</p>
               <p>Fat: <span id="fat"></span></p>
               <p>Calories: <span id="calories"></span></p>
               <P>Sugars: <span id="sugars"></span></P>
