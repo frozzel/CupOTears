@@ -31,7 +31,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navmenu"> <!-- collapse -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <!-- collapse -->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a href="https://www.ncausa.org/About-Coffee" class="nav-link">Coffee Guide!</a>
@@ -49,19 +50,22 @@
   <main class="backgroundImg">
     <div class="boxes">
       <!-- logo -->
-      <img id="logo" src="./assets/images/Low Resolution Logo - Transparent Backgroundwhte.png">
+      <img id="logo" src="./assets/images/Low Resolution Logo - Transparent Backgroundwhte.png" class="img-fluid" alt="Responsive image">
     </div>
-    
-    <div>
-      <h1 id="wordDisplay"></h1><!-- Popup word space -->
+
+    <div class="row">
+      <div class="col-12">
+      <h1 id="wordDisplay" class="text-center"></h1>
     </div>
-    
+    </div>
+
     <div class="row">
 
-      <div class="col-4">
+      <div class="col-md-4 col-sm-12">
         <!-- begin searchbar -->
         <div class="input-group">
-          <input type="text" name="q" id="q" onKeyUp="showResults(this.value)" class="form-control" placeholder="Search a Coffee!">
+          <input type="text" name="q" id="q" onKeyUp="showResults(this.value)" class="form-control"
+            placeholder="Search a Coffee!">
           <button class="btn" type="button" id="search-button">Get Coffee</button>
         </div>
         <ul id="result" class="mb-3"></ul> <!-- where autocomplete displays -->
@@ -80,7 +84,7 @@
       <!-- center spacing to separate left and right containers -->
       <div class="col-4"></div>
 
-      <div class="col-4">
+      <div class="col-md-4 col-sm-12">
         <!-- begin main search display -->
         <div class="container" style="display: none;">
           <div class="card-body">
@@ -99,14 +103,14 @@
             <p>Calories: <span id="calories"></span></p>
             <P>Sugars: <span id="sugars"></span></P>
             <!-- coffee image-->
-            <div id="image">
+            <div id="image" class="text-center">
               <img id="coffee-pic" src="" class="img-fluid">
             </div>
           </div>
         </div>
         <!-- end main search display -->
       </div>
-    </div>  
+    </div>
   </main>
 
   <script src="https://code.jquery.com/jquery.js"></script>
