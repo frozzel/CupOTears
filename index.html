@@ -82,12 +82,15 @@
       </div>
 
       <!-- center spacing to separate left and right containers -->
-      <div class="col-4"></div><!-- add responsiveness when something is in here-->
+      <div class="col-4"></div>
+      <!-- add responsiveness when something is in here-->
 
       <div class="col-md-4 col-sm-12">
         <!-- begin main search display -->
-        <div class="container" style="display: none;">
+        <div class="container-fluid" style="display: none;">
+         
           <div class="card-body">
+            
             <div class="coffeedescription">
               <h5 class="card-title " id="title">Card title</h5>
               <!-- description information -->
@@ -96,17 +99,22 @@
                 additional content. This content is a little bit longer.</p>
             </div>
             <!-- ingredients information -->
+            <p class="card-title">Ingredients:</p>
             <p class="card-text" id="ingredients"><small class="text-muted">Last updated 3 mins ago</small></p>
             <!-- nutional information -->
-            <p class="card-text" id="nutrition">Nutrition Facts</p>
+            <p class="card-title" id="nutrition">Nutrition Facts:</p>
+            <div class="card-text">
             <p>Fat: <span id="fat"></span></p>
             <p>Calories: <span id="calories"></span></p>
             <P>Sugars: <span id="sugars"></span></P>
+            </div>
             <!-- coffee image-->
             <div id="image" class="text-center">
-              <img id="coffee-pic" src="" class="img-fluid">
+              <!-- <img id="coffee-pic" src="" class="img-fluid"> -->
             </div>
+            <img id="coffee-pic" src="" class="img-fluid align-right">
           </div>
+          
         </div>
         <!-- end main search display -->
       </div>
