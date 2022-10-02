@@ -1,25 +1,24 @@
 # CupOTears
-Here at CupOTears we know how important it is to have your favorite cup of joe in front of you to pour you tears into as you face those coding challenges.  With that in mind, we created this site for you to search all the amazing coffee beverages out there to see how the different drinks are made as well as their nutritional value.
-## Description
-When you arrive to the site you will see a search bar to search popular coffee beverages from around the world.  Explore some of your favorite beverages or check out some new ones.  The autocomplete feature displays a drop down list of available drinks to search.  If you have found yourself on our site, you must love coffee as much as we do. So take a look and find yourself the perfect drink to pour your tears into. Once you choose a beverage to search, the results will diplay on the right side of the page with ,a detailed description of the drink, it's ingredients, nutrition facts, and a beautiful image of the beverage.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+## Table of Contents 
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
+- [Overview](#overview)
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+- [Resources](#resources)
+- [Contributors](#contributors)
+
+## Overview
+Here at CupOTears we know how important it is to have your favorite cup of joe in front of you to pour you tears into as you face those coding challenges.  With that in mind, we created this site for you to search all the amazing coffee beverages out there to see how the different drinks are made as well as their nutritional value.
+## Description
+When you arrive to the site you will see a search bar to search popular coffee beverages from around the world.  Explore some of your favorite beverages or check out some new ones.  The autocomplete feature displays a drop down list of available drinks to search.  If you have found yourself on our site, you must love coffee as much as we do. So take a look and find yourself the perfect drink to pour your tears into. Once you choose a beverage to search, the results will diplay on the right side of the page with ,a detailed description of the drink, it's ingredients, nutrition facts, and a beautiful image of the beverage. The search results are pulled from calling two different server-side APIs.  [SampleApis](https://sampleapis.com/api-list/coffee) gave us the description, image, and ingredients of each coffee drink and [Nutritionix](https://docs.google.com/spreadsheets/d/1jZSa039OfpQOiRzaS980nPKCvVe2TRKRPZk7ZbaH7kE/edit#gid=0) provided the results for the nutrition facts.  We've also included a Coffee Notes section where you can record which drinks you are interested in trying or just anything you want to jot down.  The notes will be displayed in your computer's local storage so when you return to the page your notes will still be there.  
+
+We never knew there were so many different types of coffee drinks out there and we wanted to share this with you. We hope you will enjoy exploring all the different coffee drinks! Get ready for your next cup and pour your tears!
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+This web page runs in the browser and stores data in the user's local storage. No Installation or setup required.
 
 ## Usage
 
@@ -31,40 +30,25 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ![alt text](assets/images/screenshot.png)
     ```
 
-## Credits
+## Resources
 
-SampleApis  (https://sampleapis.com/api-list/coffee)
+[SampleApis](https://sampleapis.com/api-list/coffee)
 
-BootStrap 5.2      (https://getbootstrap.com/)
+[BootStrap 5.2](https://getbootstrap.com/)
 
-RapidApi   (https://rapidapi.com/msilverman/api/nutritionix-nutrition-database)
+[RapidApi](https://rapidapi.com/msilverman/api/nutritionix-nutrition-database)
 
-Nutritionix (Nutrithttps://docs.google.com/spreadsheets/d/1jZSa039OfpQOiRzaS980nPKCvVe2TRKRPZk7ZbaH7kE/edit#gid=0ionix) &&
-            (https://developer.nutritionix.com/docs/v1_1)
+[Nutritionix](https://docs.google.com/spreadsheets/d/1jZSa039OfpQOiRzaS980nPKCvVe2TRKRPZk7ZbaH7kE/edit#gid=0)
+ 
+ 
+[more Nutritionix docs](https://developer.nutritionix.com/docs/v1_1)
 
-Fairus Azian Ismail (https://www.pinterest.com/pin/111253053285023729/)
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+[National Coffee Association USA](https://www.ncausa.org/About-Coffee) 
 
 ## Features
 
-If your project has a lot of features, list them here.
+The autocomplete search provides you with a drop down list of available searches to help you find a drink to choose.  The Coffee Notes note pad lets you record any sort of notes you want whether it be about coffee or your mood.  The notes will be stored in your computers local storage and will be there when you return to the site. We have also included a link in the Navigation bar that leads you to the [National Coffee Association USA](https://www.ncausa.org/About-Coffee) page which shares a complete guide to everything coffee.
 
-## How to Contribute
+## Contributors
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Created by [@frozzel](https://github.com/frozzel/), [@jweibelbootcamp](https://github.com/jweibelbootcamp/),  [@jesciak](https://github.com/jesciak/), and  [@NathDCoder](https://github.com/NathDCoder/) 
