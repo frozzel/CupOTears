@@ -43,10 +43,6 @@ justify-content: center;
 }
 /* end navbar section */
 
-#logo {
-    width: 500px;
-}
-
 /* searchbar and button section */
 #search-button {
     background-color: #3a2e2e;
@@ -132,9 +128,6 @@ justify-content: center;
 
 #wordDisplay {
     color: white;
-    position: absolute;
     font-family: 'Caveat', cursive;
-    font-size: 70px;
-    top: 400px;
-    left: 475px;
+    font-size: 4rem;
 }
