@@ -127,15 +127,13 @@ justify-content: center;
     width: 300px;
     height: auto;
 }
-/* end main card display section */
 
-/* hidden popup section */
-/* .hidden {
-    display: none;
-}
 
 #wordDisplay {
     color: white;
-    text-align: center;
-    margin-top: 100px;
+    position: absolute;
+    font-family: 'Caveat', cursive;
+    font-size: 70px;
+    top: 400px;
+    left: 475px;
 }
