@@ -43,10 +43,6 @@ justify-content: center;
 }
 /* end navbar section */
 
-/* #logo {
-    width: 500px;
-} */
-
 /* searchbar and button section */
 #search-button {
     background-color: #3a2e2e;
@@ -134,7 +130,4 @@ justify-content: center;
     color: white;
     font-family: 'Caveat', cursive;
     font-size: 4rem;
-
-    /* top: 400px;
-    left: 475px; */
 }
